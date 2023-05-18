@@ -1,3 +1,4 @@
+import { ArrowIcon } from "@/assets/icons/ArrowIcon";
 import Image from "next/image";
 
 export default function Home() {
@@ -6,27 +7,60 @@ export default function Home() {
       <h1 className="text-8xl font-extrabold">
         Learning <span className="text-sky-400">C</span>
       </h1>
-      <section className="flex flex-col gap-8 w-full">
-        <h2 className="text-4xl">Declaración</h2>
-        <p className="text-2xl">
-          <span className="text-red-400 relative">
-            int
-            <span className="absolute text-sm -bottom-5 left-0 w-[600px]">
-              Se usa para declarar un entero
-            </span>
-          </span>{" "}
-          a;
-        </p>
-        <p className="text-2xl">
-          <span className="text-green-400 relative">
-            float
-            <span className="absolute text-sm -bottom-5 left-0 w-[600px]">
-              Se usa para declarar un flotante
-            </span>
-          </span>{" "}
-          b;
-        </p>
-      </section>
+      <main className="flex flex-col w-full gap-20">
+        <section className="flex flex-col gap-8 w-full relative">
+          <div className="flex gap-8">
+            <h2 className="text-4xl">Declaración</h2>
+            <button className="bg-[#FFFFFF11] p-2 rounded-md">
+              <ArrowIcon />
+            </button>
+          </div>
+          <p className="text-2xl">
+            <span className="text-red-400 relative">
+              int
+              <span className="absolute text-sm -bottom-5 left-0 w-[600px]">
+                Se usa para declarar un entero
+              </span>
+            </span>{" "}
+            a;
+          </p>
+          <p className="text-2xl">
+            <span className="text-green-400 relative">
+              float
+              <span className="absolute text-sm -bottom-5 left-0 w-[600px]">
+                Se usa para declarar un flotante
+              </span>
+            </span>{" "}
+            b;
+          </p>
+        </section>
+        <section className="flex flex-col gap-8 w-full relative">
+          <div className="flex gap-8">
+            <h2 className="text-4xl">Inicialización</h2>
+            <button className="bg-[#FFFFFF11] p-2 rounded-md">
+              <ArrowIcon />
+            </button>
+          </div>
+          <p className="text-2xl">
+            <span className="text-red-400 relative">
+              a
+              <span className="absolute text-sm -bottom-5 left-0 w-[600px]">
+                Se usa para darle un valor a una variable de tipo entero
+              </span>
+            </span>{" "}
+            = 20;
+          </p>
+          <p className="text-2xl">
+            <span className="text-green-400 relative">
+              b
+              <span className="absolute text-sm -bottom-5 left-0 w-[600px]">
+                Se usa para darle un valor a una variable de tipo flotante
+              </span>
+            </span>{" "}
+            = 7.5;
+          </p>
+        </section>
+      </main>
     </main>
   );
 }
