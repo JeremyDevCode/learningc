@@ -74,7 +74,7 @@ export default function Home() {
                 imprimir
               </span>
             </span>
-            ("
+            (&#34;
             <span className="text-red-400 relative">
               El valor de a es
               <span className="absolute text-sm -bottom-5 -left-0">texto</span>
@@ -83,7 +83,7 @@ export default function Home() {
               %d
               <span className="absolute text-sm -bottom-5 -left-0">tipo</span>
             </span>
-            ",{" "}
+            &#34;,{" "}
             <span className="text-green-400 relative">
               a
               <span className="absolute text-sm -bottom-5 -left-0">
@@ -99,7 +99,7 @@ export default function Home() {
                 imprimir
               </span>
             </span>{" "}
-            ("
+            (&#34;
             <span className="text-red-400 relative">
               El valor de b es
               <span className="absolute text-sm -bottom-5 -left-0">texto</span>
@@ -108,7 +108,7 @@ export default function Home() {
               %f
               <span className="absolute text-sm -bottom-5 -left-0">tipo</span>
             </span>
-            ",{" "}
+            &#34;,{" "}
             <span className="text-green-400 relative">
               b
               <span className="absolute text-sm -bottom-5 -left-0">
